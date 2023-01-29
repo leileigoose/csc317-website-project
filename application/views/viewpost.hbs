@@ -1,0 +1,32 @@
+<script defer type="text/javascript" src="../public/js/addComments.js"></script>
+
+<head>
+    <title>View post</title>
+</head>
+
+<body class="post-container">
+    <img class="img-container" src="/{{currentPost.image}}"/>
+
+    <div class="post-info">
+        <h1 class="postTitle">{{currentPost.title}}</h1>
+        <p class="postDescription">{{currentPost.description}}</p>
+        <div class="post-user-date">
+            <p class="postUser">{{currentPost.username}}</p>
+            <p class="postDate">{{formatDate currentPost.createdAt}}</p>
+        </div>
+    </div>
+    <div class="comment-section">
+        <div class="comment-box">
+            <textarea id="comment-text" class="comment-textbox"></textarea>
+        </div>
+        <button id="comment-button" class="comment-button" data-postid="{{currentPost.id}}" type="submit">HONK</button>
+        <br><br>
+        
+        <div id="commentList" class="posted-comments-box">
+            {{#each currentPost.comments}}
+                {{>comment this}}
+            {{/each}}
+        </div>
+        
+    </div>
+</body>

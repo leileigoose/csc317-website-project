@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <!--Document title-->
+    <head>
+        <title>Post an Image</title>
+        <link rel="stylesheet" href="../CSS/goosestyling.css">
+    </head>
+
+    <!--Nav Bar-->
+    <div class="navigationBar">
+        <nav>
+            <a href="index.html"><button>Home</button></a>
+            <a href="login.html"><button>Login</button></a>
+            <a href="registration.html"><button>Sign Up</button></a>
+            <a href="postimage.html"><button>Upload Image</button></a>
+            <a href="viewpost.html"><button>Example Post</button></a>
+        </nav>
+    </div>
+
+    <!--Section heading introducing the form-->
+    <body>
+        <header> 
+            <h1>UPLOAD</h1>
+            <h5>Submit your own image~</h5>
+        </header>
+
+    <!--Input fields are REQUIRED to be in form tags-->
+    <form>
+        <!--Input Post Title-->
+        <fieldset>
+            <div class="postingImg"> 
+                <label for="pTitle">Post Title: </label><br>
+                <input type="text"> <br>
+            
+            <!--Input Post Description-->
+                <label for="descr">Post Description: </label><br>
+                <textarea placeholder="Write something.."></textarea> <br>
+
+            <!--Input image-->
+                <label for="pic">Upload your image:</label>
+                <input type="file" name="image" accept="image/png, image/jpeg"><br>
+
+            <!--Accept 'Accpetable Use Policy'-->
+                <input type="checkbox" name="acceptPolicy">
+                <label for="acceptPolicy">I accept the <a href="">Acceptable Use Policy </a> for uploading images</label><br>
+            
+            <!--Submit Button-->
+            <input type="submit" value="Post!">
+            </div>
+        </fieldset>
+    </form>
+
+    <!--Footer-->
+    <footer> 
+        <!--Info who wrote the page, copyright data, etc-->
+        <p> &copy 2022 Aleia Natividad   San Francisco State University</p>
+        <p>Background Image: <a href = "https://goose.game" >Untitled Goose Game</a></p>
+    </footer>
+
+    </body>
+</html>

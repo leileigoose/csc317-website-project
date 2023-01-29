@@ -1,0 +1,34 @@
+<header> 
+    <h1>UPLOAD</h1>
+    <h5>Submit your own image~</h5>
+</header>
+
+<!--Input fields are REQUIRED to be in form tags-->
+<form id="post-image" class="input-form"
+    action="/posts/create"
+    method="post"
+    enctype="multipart/form-data">
+    <!--Input Post Title-->
+    <fieldset>
+        <div class="postingImg"> 
+            <label for="pTitle">Post Title: </label><br>
+            <input type="text" id="postTitle" name="title" required/> <br>
+        
+        <!--Input Post Description-->
+            <label for="descr">Post Description: </label><br>
+            <textarea placeholder="Write something.." name="description" id="postDescription"></textarea> <br>
+
+        <!--Input image-->
+            <label for="pic">Upload your image:</label>
+            <input type="file" name="uploadImage" accept="image/png, image/jpeg" required/><br>
+
+        <!--Accept 'Accpetable Use Policy'-->
+            <input type="checkbox" name="acceptPolicy" required/>
+            <label for="acceptPolicy">I accept the <a href="">Acceptable Use Policy </a> for uploading images</label><br>
+        
+        <!--Submit Button-->
+        <input type="submit" value="Post!">
+        </div>
+    </fieldset>
+</form>
+

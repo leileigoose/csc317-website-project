@@ -1,0 +1,241 @@
+/* GENERAL */
+html {
+  background-image: url("https://www.wsgf.org/f/u/imagecache/node-gallery-display/contrib/dr/30061/ingame_16x10.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: 'Trebuchet MS';
+  text-align: center;
+}
+
+h5, p {
+  font-family: 'Lucida Sans';
+  text-align: center;
+}
+
+label {
+  font-family: 'Lucida Sans';
+}
+
+section {
+  font-family: Arial;
+  text-align: center;
+}
+
+.searchBar input[type=text] {
+  font-size: 17px;
+  float: left;
+  border: 1px solid grey;
+  height: 80%;
+  border-radius: 12px;
+  margin-top: 3%;
+}
+
+.searchBar button {
+  background-image: url(../images/uploads/websiteIcons/1257-hjonk-question.png);
+  background-position: 50% 3%;  
+  padding: 10px;
+  height: 80%;
+  background-color: white;
+  border-radius: 12px;
+  padding: 12px 20px;
+  border-color: azure;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Trebuchet MS';
+}
+
+.navigationBar, .navigationBarIndex {
+  margin: 50px;
+  text-align: center;
+}
+
+.navigationBarIndex a button {
+  background-color: white;
+  border-radius: 12px;
+  padding: 12px 20px;
+  border-color: azure;
+  color: orange;
+  font-size: larger;
+  font-family: 'Trebuchet MS';
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a button:hover {
+  background-color: rgb(235, 231, 231);
+}
+
+div.gooseGif {
+  animation-name: gooseGif;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  float: right;
+}
+
+@keyframes gooseGif {
+  0% {
+      margin-right: 0px;
+  }
+  25% {
+      margin-right: 100%;
+  }
+  50% {
+      margin-left: 0px;
+  }
+  100% {
+      transform: rotateY(180deg);
+      margin-left: 100%;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: xx-small;
+}
+
+form {
+  text-align: center;
+}
+
+
+/* INDEX */ 
+
+.masonry {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 1rem;
+  grid-auto-rows: minmax(100px, auto);  
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+
+.product-card {
+  border-radius: .35em;
+  box-shadow: 2px 2px 10px 2px #eee;
+  margin: auto;
+}
+
+.prod-img {
+  grid-area: info;
+  height: 100%;
+  width: 100%;
+  border-radius: .35rem ;
+  border-radius: .35rem ;
+  object-fit: cover;
+}
+
+.prod-title {
+  margin: 0;
+  background-color: transparent;
+} 
+
+/* LOGIN */
+fieldset {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+  background-color: rgb(15, 175, 211, 0.5);
+}
+
+input[type=submit] {
+  background-color:green;
+  border-radius: 12px;
+  padding: 10px 15px;
+  border-color:chartreuse;
+  color: white;
+  font-size: medium;
+  font-family: 'Trebuchet MS';
+  text-align: center;
+  margin-top: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: darkgreen;
+}
+
+div.loginForm label {
+  font-family: 'Lucida Sans';
+}
+
+/* REGISTER */
+
+div.signUpForm label {
+  font-family: 'Lucida Sans';
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div.errorMessages {
+  padding: 10px;
+  color: rgb(132, 19, 19);
+}
+
+/* POSTING IMAGE */
+textarea {
+  padding: 50px 50px;
+  resize: vertical;
+}
+
+.post-container {
+  text-align: center;
+}
+
+.img-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.post-info {
+  width: 75%;
+  height: auto;
+  display: inline-block;
+  background-color: rgba(232, 218, 197, 0.5);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 10px;
+}
+
+/* ADDING COMMENTS */
+.comment-button {
+    background-color: white;
+    border-radius: 12px;
+    padding: .5%;
+    border-color: azure;
+    color: orange;
+    font-family: 'Trebuchet MS';
+}
+
+.singleComment {
+  width: 75%;
+  height: auto;
+  display: inline-block;
+  background-color: rgba(15, 211, 136, 0.5);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 10px;
+}
+
+.commentDate {
+  text-align: right;
+}
+
+.comment-user {
+  text-align: left;
+}
+
+.comment {
+  text-align: center;
+}

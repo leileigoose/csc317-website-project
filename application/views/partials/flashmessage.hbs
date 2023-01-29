@@ -1,0 +1,14 @@
+<link rel='stylesheet' type="text/css" src="/application/public/css/flashmessages.css">
+
+
+<div class="fMess" id="flash-message">
+    {{#if messages.error}}
+        <div class="failed">
+            {{messages.error}}
+        </div>
+    {{else}}
+        <div class="success">
+            {{messages.success}}
+        </div>
+    {{/if}}
+</div>

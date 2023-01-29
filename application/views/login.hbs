@@ -1,0 +1,29 @@
+
+<header> 
+    <h1>LOGIN</h1>
+    <h5>Welcome back!</h5>
+</header>
+
+
+<!--Input fields are REQUIRED to be in form tags-->
+<form id="loginForm" class="inputForm"
+    action="/users/login"
+    method="post"
+    enctype="application/x-www-form-urlencoded">
+<!--Get username-->
+    <fieldset>
+        <div class="loginForm"> 
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            
+            <!--Get password, do not show password-->
+            <label for="pass">Password:</label><br>
+            <input type="password" id="pass" name="password" required><br>
+            
+            <!--Submit Button-->
+            <div class="submitButton">
+                <input type="submit" value="Login!">
+            </div>
+        </div>
+    </fieldset>
+</form>

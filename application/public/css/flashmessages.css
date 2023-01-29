@@ -1,0 +1,29 @@
+.failed {
+    background-color: rgb(110, 3, 3);
+    padding: 12px 20px;
+    color: rgb(219, 141, 141);
+    font-size: larger;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    animation: fadeIn 1s linear 5s 1 forwards;
+    visibility: visible;
+}
+
+.success {
+    background-color: rgb(6, 98, 55);
+    padding: 12px 20px;
+    color: rgb(141, 219, 166);
+    font-size: larger;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    animation: fadeIn 1s linear 5s 1 forwards;
+    visibility: visible;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 0;
+    }
+  }
+
+ 

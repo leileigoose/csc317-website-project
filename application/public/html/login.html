@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    
+    <!--Document Title-->
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="../CSS/goosestyling.css">
+    </head>
+
+    <!--Section Heading introducing the form-->
+    <body>
+        <!--Nav Bar-->
+        <div class="navigationBar">
+            <nav>
+                <a href="index.html"><button>Home</button></a>
+                <a href="login.html"><button>Login</button></a>
+                <a href="registration.html"><button>Sign Up</button></a>
+                <a href="postimage.html"><button>Upload Image</button></a>
+                <a href="viewpost.html"><button>View Posts</button></a>
+            </nav>
+        </div>            
+        
+        <header> 
+                <h1>LOGIN</h1>
+                <h5>Welcome back!</h5>
+        </header>
+
+        <!--Input fields are REQUIRED to be in form tags-->
+        <form>
+        <!--Get username-->
+            <fieldset>
+                <div class="loginForm"> 
+                    <label for="userName">User Name:</label><br>
+                    <input type="text" id="userName" name="userName" required><br>
+                    
+                    <!--Get password, do not show password-->
+                    <label for="pass">Password:</label><br>
+                    <input type="password" id="pass" name="password" required><br>
+                    
+                    <!--Submit Button-->
+                    <div class="submitButton">
+                        <input type="submit" value="Login!">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <!--Footer-->
+        <footer> 
+            <!--Info who wrote the page, copyright data, etc-->
+            <p> &copy 2022 Aleia Natividad   San Francisco State University</p>
+            <p>Background Image: <a href = "https://goose.game" >Untitled Goose Game</a></p>
+        </footer>
+    </body>
+</html>

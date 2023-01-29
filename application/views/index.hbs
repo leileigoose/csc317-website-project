@@ -1,0 +1,18 @@
+<!--<script defer type="text/javascript" src="/public/js/fetchPhotos.js"></script> -->
+<div class="header">
+    <header>
+        <!--The Banner-->
+        <h1>Welcome to The Goose Nest</h1>
+        <h5>An image hosting website to nest your favorite pictures</h5>
+    </header>
+</div>
+
+<div class="masonry">
+    {{#each results}}
+    <div class="product-card">
+        <image src="{{this.thumbnail}}"></image>
+        <p class="prod-title">{{this.title}}</p>
+        <center><a href="/posts/{{this.id}}">Go to post</a></center>
+    </div>
+    {{/each}}
+</div> 

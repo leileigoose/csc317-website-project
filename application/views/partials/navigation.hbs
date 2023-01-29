@@ -1,0 +1,31 @@
+
+<div class="gooseGif">
+    <img src="https://media.tenor.com/PpjSiIQFIWAAAAAi/goose-running-goose.gif">
+</div>
+<br></br>
+<br></br>
+<div class="navigationBarIndex">
+    <form class="searchBarForm"
+        method="GET"
+        action="/posts/search"
+        enctype="application/x-www-form-urlencoded">
+        <fieldset>
+        <div class="searchBar">
+            <input type="text" id="search-text" placeholder="Look for post..." class="search-text" name="searchTerm" value="{{searchValue}}"/>
+            <button type="submit">HONK</button>
+        </div>
+    </fieldset>
+    </form>
+    <br>
+    <br>
+    <nav>
+        <a href="/"><button>Home</button></a>
+        {{#if isLoggedIn}}
+        <a href="/" id="logout-button"><button>Logout</button></a>
+        <a href="/postimage"><button>Upload Image</button></a>
+        {{else}}
+        <a href="/login" id="login-button"><button>Login</button></a>
+        <a href="/registration"><button>Sign Up</button></a>
+        {{/if}}
+    </nav>
+</div>

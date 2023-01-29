@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <!--Document title-->
+    <head>
+        <title>Sign Up Page</title>
+        <link rel="stylesheet" href="../CSS/goosestyling.css">
+        <script defer type="text/javascript" src="../JS/validation.js"></script> 
+    </head>
+    <!--Section heading introducing the form-->
+    <body>
+        <!--Nav Bar-->
+        <div class="navigationBar">
+            <nav>
+                <a href="index.html"><button>Home</button></a>
+                <a href="login.html"><button>Login</button></a>
+                <a href="registration.html"><button>Sign Up</button></a>
+                <a href="postimage.html"><button>Upload Image</button></a>
+                <a href="viewpost.html"><button>View Posts</button></a>
+            </nav>
+        </div>
+        <header> 
+            <h1>REGISTER WITH US</h1>
+            <h5>Giggle with the Gaggle!</h5>
+        </header>
+            <!--Input fields are REQUIRED to be in form tags-->
+        <form id="form">
+            <!--Get username-->
+            <fieldset>
+                <div class="signUpForm"> 
+                <!--Get username-->
+                    <label for="userName">User Name: </label><br>
+                    <input type="text" name="userName" id ="userName" required><br>
+
+                    <!--Username Err messages-->
+                    <div class="errorMessages">
+                        <div id="userNameErrAlpha"></div>
+                        <div id="userNameErrLen"> </div>
+                    </div>
+
+                <!--Get email-->
+                    <label for="email">Email Address: </label><br>
+                    <input type="text" name="email" id="email"><br>
+                    
+                    <!--Email Err Messages-->
+                    <div class="errorMessages">
+                        <div id="emailError"></div>
+                    </div>
+                
+                <!--Get password, do not show password-->
+                    <label for="pass">Password: </label><br>
+                    <input type="password" name="password" id="password" required><br>
+
+                    <!--Password Err Message-->
+                    <div class="errorMessages">
+                        <div id="passwordErrorLen"></div>
+                        <div id="passwordErrorUpper"></div>
+                        <div id="passwordErrorNum"></div>
+                        <div id="passwordErrorSpecial"></div>
+                    </div>
+
+                <!--Confirm password-->
+                    <label for="pass">Confirm Password:</label><br>
+                    <input type="password" name="password" id="comPassword" required><br>
+
+                    <!--Passwords do not match-->
+                    <div class="errorMessages">
+                        <div id="passMatchError"></div>
+                    </div>
+                    
+                <!--Confirm you're older than 13-->
+                    <input type="checkbox" name="age" required>
+                    <label for="oldEnough">Are you 13 years or older?</label><br>   
+                    
+                    <!--Not Old Enough-->
+                    <br></br>
+
+                <!--Ask user to accept TOS and Privacy Rules (Will not go anywhere)-->
+                    <input type="checkbox" name="ruleAgreement" required>
+                    <label for="agreement">Please Accept <a href="">TOS and Privacy Rules</a></label><br> 
+                    <!--Submit button-->
+                    <input type="submit" id="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+        <!--Footer-->
+        <footer> 
+            <!--Info who wrote the page, copyright data, etc-->
+            <p> &copy 2022 Aleia Natividad   San Francisco State University</p>
+            <p>Background Image: <a href = "https://goose.game" >Untitled Goose Game</a></p>
+        </footer>
+    </body>
+</html>
